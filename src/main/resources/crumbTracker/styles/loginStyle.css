@@ -1,0 +1,52 @@
+
+.body{
+    -fx-background-color: rgb(240,240,240);
+}
+.fieldLabel{
+    -fx-text-fill:black;
+    -fx-font-size:12pt;
+    }
+
+.errorLabel{
+    -fx-text-fill: red;
+}
+
+.wrongField{
+    -fx-text-box-border: red;
+    -fx-focus-color: red;
+
+}
+.correctField{
+    -fx-text-box-border: rgb(64%,160%,237%) ;
+    -fx-focus-color: rgb(64%,160%,237%);
+    }
+.textField{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, .5, .5, .5);
+}
+
+.exitButton{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 0);
+}
+.exitButton:hover{
+    -fx-background-color: darkred;
+}
+
+.loginButton{
+    -fx-background-color: rgb(28,158,14);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 0);
+        -fx-text-fill: white;
+        -fx-font-size: 12pt;
+        -fx-font-weight:900;
+}
+.loginButton:hover{
+    -fx-background-color: darkgreen;
+}
+
+.buttonBox{
+    -fx-alignment:center;
+}
+

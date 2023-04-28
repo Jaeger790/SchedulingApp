@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="appointmentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1125.0" stylesheets="@../styles/customers.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="appointmentTable" layoutX="25.0" layoutY="40.0" prefHeight="400.0" prefWidth="1000.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+            <columns>
+                <TableColumn fx:id="aptIdCol" prefWidth="41.0" text="Apt ID" />
+                <TableColumn fx:id="aptTitleCol" prefWidth="110.0" text="Title" />
+                <TableColumn fx:id="aptDescriptionCol" prefWidth="147.0" text="Description" />
+                <TableColumn fx:id="aptLocationCol" prefWidth="155.0" text="Location" />
+                <TableColumn fx:id="aptContactCol" prefWidth="104.0" text="Contact" />
+                <TableColumn fx:id="aptTypeCol" prefWidth="116.0" text="Order Type" />
+                <TableColumn fx:id="aptStartCol" prefWidth="156.0" text="Start" />
+                <TableColumn fx:id="aptEndCol" prefWidth="140.0" text="End" />
+                <TableColumn fx:id="customerIdCol" prefWidth="52.0" text="Cust ID" />
+                <TableColumn fx:id="userIdCol" prefWidth="53.0" text="User ID" />
+            </columns>
+        </TableView>
+        <TextField fx:id="titleTB" layoutX="25.0" layoutY="485.0" prefHeight="25.0" prefWidth="150.0" />
+        <TextField fx:id="descriptionTB" layoutX="225.0" layoutY="485.0" />
+        <ComboBox fx:id="typeCB" layoutX="400.0" layoutY="485.0" prefWidth="150.0" />
+        <ComboBox fx:id="contactCB" layoutX="600.0" layoutY="485.0" prefHeight="25.0" prefWidth="150.0" />
+        <ComboBox fx:id="customerCB" layoutX="785.0" layoutY="485.0" prefWidth="150.0" />
+        <DatePicker fx:id="startDateDP" layoutX="25.0" layoutY="535.0" />
+        <ComboBox fx:id="startTimeCombo" layoutX="225.0" layoutY="535.0" prefWidth="150.0" />
+        <DatePicker fx:id="endDateDP" layoutX="400.0" layoutY="535.0" />
+        <ComboBox fx:id="endTimeCombo" layoutX="600.0" layoutY="535.0" prefWidth="150.0" />
+        <Button fx:id="homeButton" layoutX="1020.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="homeButton" text="Home">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="clearFormButton" layoutX="1040.0" layoutY="445.0" mnemonicParsing="false" prefWidth="60.0" styleClass="homeButton" text="Clear" />
+        <Button fx:id="addAppointmentButton" layoutX="960.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" styleClass="addCust" text="Add Appointment">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="modifyAppointmentButton" layoutX="960.0" layoutY="535.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" styleClass="modCust" text="Modify Appointment">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="cancelAppointmentButton" layoutX="960.0" layoutY="585.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" styleClass="deleteCust" text="Cancel Appointment">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="25.0" layoutY="446.0" text="Apt ID:" />
+        <Label fx:id="aptIdLabel" layoutX="70.0" layoutY="446.0" />
+        <Label layoutX="25.0" layoutY="470.0" text="Title" />
+        <Label layoutX="400.0" layoutY="470.0" text="Order Type" />
+        <Label layoutX="225.0" layoutY="470.0" text="Description" />
+        <Label layoutX="600.0" layoutY="470.0" text="Contact" />
+        <Label layoutX="785.0" layoutY="470.0" text="Customer" />
+        <Label layoutX="25.0" layoutY="520.0" text="Appointment Start Date" />
+        <Label layoutX="225.0" layoutY="520.0" text="Appointment Start Time" />
+        <Label layoutX="600.0" layoutY="520.0" text="Appointment End Time" />
+        <Label layoutX="400.0" layoutY="520.0" text="Appointment End Date" />
+        <Label fx:id="cancelAppointmentLabel" layoutX="727.0" layoutY="589.0" styleClass="deleteMessage" text="Appointment Delete Message" textAlignment="RIGHT">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <RadioButton fx:id="allAptRadio" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" text="All Appointments">
+            <toggleGroup>
+                <ToggleGroup fx:id="appointmentFilter" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="monthAptRadio" layoutX="150.0" layoutY="15.0" mnemonicParsing="false" text="This Month" toggleGroup="$appointmentFilter" />
+        <RadioButton fx:id="weekAptRadio" layoutX="245.0" layoutY="15.0" mnemonicParsing="false" text="This Week" toggleGroup="$appointmentFilter" />
+    </children>
+</AnchorPane>

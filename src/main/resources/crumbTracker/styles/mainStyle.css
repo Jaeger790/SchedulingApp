@@ -1,0 +1,33 @@
+.homeHeader{
+    -fx-font-size: 16pt;
+}
+.aptButton{
+    -fx-background-color: rgb(0, 159, 183);
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.customersButton{
+    -fx-background-color: rgb(0, 159, 183);
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.aptButton:hover{
+    -fx-background-color: rgb(0, 99, 123);
+    -fx-text-fill: white;
+}
+.customersButton:hover{
+    -fx-background-color: rgb(0, 99, 123);
+    -fx-text-fill: white;
+}
+.noAppointmentMessage{
+    -fx-font-size: 14pt;
+    -fx-text-fill: rgba(0,0,0,.4);
+    -fx-effect: dropshadow(gaussian, rgba(100, 0, 0, .4), 10, 0, 0, 0);
+}
+.upcomingAppointmentMessage{
+    -fx-text-fill: red;
+    -fx-font-size: 15pt;
+    -fx-effect: dropshadow(gaussian, rgba(100, 20, 20, .2), 5, 0, 5, 5);
+}

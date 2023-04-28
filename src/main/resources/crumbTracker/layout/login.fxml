@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="400.0" maxWidth="350.0" minHeight="300.0" minWidth="350.0" spacing="20.0" styleClass="body" stylesheets="@../styles/loginStyle.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crumbTracker.controller.LoginController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+   <VBox prefHeight="200.0" prefWidth="100.0">
+      <children>
+         <Label fx:id="timeZoneLabel" alignment="TOP_LEFT" />
+      </children>
+   </VBox>
+   <VBox alignment="CENTER" prefHeight="38.0" prefWidth="340.0">
+      <children>
+      
+                <Label fx:id="loginHeader" alignment="TOP_LEFT" prefHeight="34.0" prefWidth="190.0" text="Scheduling Login">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="350.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="240.0" prefWidth="350.0" styleClass="inputVBox">
+            <children>
+               <VBox alignment="CENTER" prefHeight="60.0" prefWidth="310.0" styleClass="textContainer">
+                  <children>
+                     <Label fx:id="userLabel" styleClass="fieldLabel" text="User Name">
+                        <VBox.margin>
+                           <Insets right="70.0" />
+                        </VBox.margin>
+                     </Label>
+                     <TextField fx:id="userNameTF" maxWidth="150.0" promptText="admin" styleClass="textField">
+                         <VBox.margin>
+                             <Insets/>
+                         </VBox.margin>
+                         <cursor>
+                             <Cursor fx:constant="TEXT"/>
+                         </cursor>
+                     </TextField>
+                  </children>
+               </VBox>
+               <VBox alignment="CENTER" prefHeight="60.0" prefWidth="310.0" styleClass="textContainer">
+                  <children>
+                     <Label fx:id="passwordLabel" styleClass="fieldLabel" text="Password">
+                        <VBox.margin>
+                           <Insets right="80.0" />
+                        </VBox.margin>
+                     </Label>
+                      <PasswordField fx:id="passwordTF" maxWidth="150.0" promptText="open" styleClass="textField"/>
+                  </children>
+               </VBox>
+               <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="errorLabel" textAlignment="CENTER" />
+            </children>
+         </VBox>
+         <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="35.0" prefHeight="35.0" prefWidth="150.0" styleClass="loginButton" text="Login" HBox.hgrow="ALWAYS">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+             <Button fx:id="exitButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="150.0" styleClass="exitButton" text="Exit">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</VBox>

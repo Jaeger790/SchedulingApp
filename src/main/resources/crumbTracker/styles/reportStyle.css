@@ -1,0 +1,33 @@
+.homeButton{
+    -fx-background-color: rgb(0, 159, 183);
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.homeButton:hover{
+    -fx-background-color: rgb(0, 99, 123);
+}
+.combo-box{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+    -fx-background-color: rgb(0, 159, 183);
+}
+.combo-box .list-view .list-cell{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight:200;
+
+}
+.combo-box .list-view .list-cell:hover{
+    -fx-background-color: rgb(0, 159, 183);
+    -fx-text-fill: white;
+    -fx-font-weight:200;
+
+}
+.combo-box .list-cell{
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+}
+
+.aptTableLabel{
+    -fx-font-size: 14pt;
+}

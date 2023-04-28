@@ -1,0 +1,43 @@
+.customersHeader{
+    -fx-font-size: 18pt;
+}
+.homeButton{
+    -fx-background-color: rgb(0, 159, 183);
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.homeButton:hover{
+    -fx-background-color: rgb(0, 99, 123);
+}
+.addCust{
+    -fx-background-color: rgb(28,158,14);
+    -fx-text-fill: white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.addCust:hover{
+    -fx-background-color: rgb(00,108,0);
+}
+.modCust{
+    -fx-background-color: rgb(230, 150, 63);
+    -fx-text-fill:white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .4), 10, 0, 0, 0);
+}
+.modCust:hover{
+    -fx-background-color: rgb(170, 90, 03);
+}
+.deleteCust{
+    -fx-background-color: red;
+    -fx-text-fill:white;
+    -fx-font-weight:900;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, .6), 10, 0, 0, 0);
+}
+.deleteCust:hover{
+    -fx-background-color: darkred;
+}
+.deleteMessage{
+    -fx-text-fill: red;
+    -fx-font-weight:900;
+}
