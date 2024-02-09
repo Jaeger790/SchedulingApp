@@ -1,4 +1,4 @@
-Title: CrumbTracker
+Title: Scheduler
 Purpose: To provide scheduling functions in a desktop application format.  The app is able to pull from a mySQL database for a company to have persisting data collection.
 Author: Bradley Rott 
 Contact: brott1@crumbTracker.edu
